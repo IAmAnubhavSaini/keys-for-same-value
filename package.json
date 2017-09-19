@@ -1,0 +1,15 @@
+{
+  "name": "keys-for-same-value",
+  "version": "1.0.0",
+  "description": "Get all the keys which have same value as the given one.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "object",
+    "keys"
+  ],
+  "author": "Git Faf <git.faf@gmail.com>",
+  "license": "MIT"
+}
