@@ -1,6 +1,6 @@
 {
     "name": "keys-for-same-value",
-    "version": "4.0.0",
+    "version": "5.0.0",
     "description": "Get all the keys which have same value as the given one.",
     "main": "index.js",
     "scripts": {
@@ -14,5 +14,13 @@
         "keys"
     ],
     "author": "Git Faf <git.faf@gmail.com>",
-    "license": "MIT"
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gitfaf/keys-for-same-value.git"
+    },
+    "bugs": {
+        "url": "https://github.com/gitfaf/keys-for-same-value/issues"
+    },
+    "homepage": "https://github.com/gitfaf/keys-for-same-value#readme"
 }
