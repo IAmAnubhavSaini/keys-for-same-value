@@ -10,14 +10,14 @@
  * returns: ["f", "fa", "faf"]
  */
 function getAllKeys(forValue: any, inObject: any) {
-    const keys = [];
-    for (let key of Object.keys(inObject)) {
-        const o = inObject[key];
-        if (o === forValue) {
+    let keys: any = [];
+    for (let [key, value] of Object.entries(inObject)) {
+        console.log({value, key});
+        if (value === forValue) {
             keys.push(key);
         }
-        if (typeof o === 'object') {
-            keys.concat([...getAllKeys(forValue, o)]);
+        if (typeof value === typeof {}) {
+            keys = [...keys, ...getAllKeys(forValue, value)];
         }
     }
     return keys;

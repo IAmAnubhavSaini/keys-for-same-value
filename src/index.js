@@ -19,14 +19,14 @@ exports.getAllKeys = void 0;
  */
 function getAllKeys(forValue, inObject) {
     var keys = [];
-    for (var _i = 0, _a = Object.keys(inObject); _i < _a.length; _i++) {
-        var key = _a[_i];
-        var o = inObject[key];
-        if (o === forValue) {
+    for (var _i = 0, _a = Object.entries(inObject); _i < _a.length; _i++) {
+        var _b = _a[_i], key = _b[0], value = _b[1];
+        console.log({ value: value, key: key });
+        if (value === forValue) {
             keys.push(key);
         }
-        if (typeof o === 'object') {
-            keys.concat(__spreadArray([], getAllKeys(forValue, o)));
+        if (typeof value === typeof {}) {
+            keys = __spreadArray(__spreadArray([], keys), getAllKeys(forValue, value));
         }
     }
     return keys;
