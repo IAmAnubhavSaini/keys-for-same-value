@@ -12,8 +12,12 @@
 function getAllKeys(forValue: any, inObject: any) {
     const keys = [];
     for (let key of Object.keys(inObject)) {
-        if (inObject[key] === forValue) {
+        const o = inObject[key];
+        if (o === forValue) {
             keys.push(key);
+        }
+        if (typeof o === 'object') {
+            keys.concat([...getAllKeys(forValue, o)]);
         }
     }
     return keys;
