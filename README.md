@@ -1,6 +1,6 @@
 # Keys for same value
 
-Get all the keys for a given value in an object.
+Get all the keys that have a given value; anywhere in an object.
 
 ```bash
 
@@ -10,17 +10,17 @@ Get all the keys for a given value in an object.
 
 ```javascript
 
-    const getAllKeys = require('keys-for-same-value').getAllKeys
+const {getAllKeys} = require('keys-for-same-value');
 
-    ggetAllKeys('faf', { 'f':'faf', 'fa': 'faf', 'faf': 'faf', 'fafa':'fafa'})
-    // returns
-    // ["f", "fa", "faf"]
+getAllKeys('faf', {'f': 'faf', 'fa': 'faf', 'faf': 'faf', 'fafa': 'fafa'})
+// returns
+// ["f", "fa", "faf"]
 
 ```
 
 ## Testing
 
-`jasmine`
+`jasmine` or `npm run test`
 
 ## License
 

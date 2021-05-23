@@ -10,15 +10,15 @@
  * returns: ["f", "fa", "faf"]
  */
 function getAllKeys(forValue, inObject) {
-    var keys = []
+    const keys = [];
     for (let key of Object.keys(inObject)) {
         if (inObject[key] === forValue) {
-            keys.push(key)
+            keys.push(key);
         }
     }
-    return keys
+    return keys;
 }
 
 module.exports = {
     getAllKeys
-}
+};
