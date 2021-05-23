@@ -1,6 +1,6 @@
 {
     "name": "keys-for-same-value",
-    "version": "7.0.0",
+    "version": "8.0.0",
     "description": "Get all the keys which have same value as the given one.",
     "main": "src/index.js",
     "scripts": {
