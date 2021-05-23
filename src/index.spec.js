@@ -1,4 +1,4 @@
-const {getAllKeys} = require('../index');
+const {getAllKeys} = require('./index');
 
 describe('get all keys for value in object', () => {
     it('gets all exptected keys successfully', () => {

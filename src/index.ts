@@ -9,7 +9,7 @@
  * getAllKeysFor('faf', { 'f':'faf', 'fa': 'faf', 'faf': 'faf', 'fafa':'fafa'})
  * returns: ["f", "fa", "faf"]
  */
-function getAllKeys(forValue, inObject) {
+function getAllKeys(forValue: any, inObject: any) {
     const keys = [];
     for (let key of Object.keys(inObject)) {
         if (inObject[key] === forValue) {
@@ -19,6 +19,6 @@ function getAllKeys(forValue, inObject) {
     return keys;
 }
 
-module.exports = {
+export {
     getAllKeys
 };
